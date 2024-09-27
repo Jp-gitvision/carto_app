@@ -1,0 +1,317 @@
+.navbar{
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+}
+
+.listItem{
+  margin-right: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.avatar{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card{
+  width: 30%;
+  padding: 10px;
+  -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+}
+
+.img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin: 20px 0px;
+}
+
+.home{
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.desc{
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+.cardButton{
+  border: none;
+  background-color: rgb(0,110,183);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.post{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.postImg{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+
+}
+
+.postDesc{
+  padding:0 100px;
+  font-size: 24px;
+  font-weight: 300;
+  color:gray;
+}
+
+.postLongDesc{
+  padding: 100px;
+  padding-top: 50px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.login{
+  height: calc(100vh - 50px);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/public/img/pexels-ella-olsson-1640777.jpg'); /* Remplacez par le chemin de votre image ou l'URL */
+  background-size: cover; /* Pour couvrir toute la zone disponible sans redimensionner l'image */
+  background-position: center; /* Pour centrer l'image dans le conteneur */
+  background-repeat: no-repeat; 
+}
+
+.signin{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/public/img/pexels-ella-olsson-1640777.jpg'); /* Remplacez par le chemin de votre image ou l'URL */
+  background-size: cover; /* Pour couvrir toute la zone disponible sans redimensionner l'image */
+  background-position: center; /* Pour centrer l'image dans le conteneur */
+  background-repeat: no-repeat; 
+}
+
+.wrapper{
+  width: 60%;
+  height: 75%;
+  -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8); /* blanc avec un alpha de 0.8 pour réduire la transparence */
+  border-radius: 10px; /* Vous pouvez ajuster cette valeur selon l'arrondi désiré */
+}
+
+.wrapper_inscription{
+  height: 75%;
+  width: 30%; /* ou la largeur souhaitée */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  padding: 20px; /* ajoutez du padding si nécessaire */
+  background-color: rgba(255, 255, 255, 0.8); /* blanc avec un alpha de 0.8 pour réduire la transparence */
+  border-radius: 10px; /* Vous pouvez ajuster cette valeur selon l'arrondi désiré */
+}
+
+
+.right, .left{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center{
+  height: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.center_inscription{
+  /* height: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* cela permet de prendre toute la largeur du wrapper_inscription */
+}
+
+.or{
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  padding: 10%;
+  color:gray;
+  background-color: white;
+  font-weight: bold;
+}
+
+.line{
+  width: 0.5px;
+  height: 70%;
+  background-color: lightgray;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.loginButton{
+  width: 150px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.google{
+  background-color: #df4930;
+}
+.facebook{
+  background-color: #507cc0;
+}
+.github{
+  background-color: black;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+input{
+  width: 200px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.submit{
+  width: 200px;
+  background-color: rgb(0,110,183);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.loginTitle{
+  position: absolute;
+  color: black;
+  top: 150px;
+  margin-top: 100px;
+}
+
+.signinTitle {
+  color: black; /* ou la couleur de votre choix */
+  margin-bottom: 20px; /* retirez la position absolue et ajoutez un margin-bottom pour l'espacement */
+}
+
+.link{
+  color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .wrapper {
+    width: 65%;
+    height: 90%;
+    flex-direction: column;
+  }
+
+  .wrapper_inscription{
+    width: 65%;
+    height: 90%;
+    flex-direction: column;
+  }
+
+  .loginTitle {
+    display: none;
+  }
+
+  .center {
+    width: 100%;
+    position: relative;
+  }
+
+  .left {
+    padding: 20px;
+  }
+
+  .right {
+    padding: 20px;
+  }
+
+  .line {
+    height: 0.5px;
+    width: 300px;
+  }
+}
+
+.navbar-logo {
+  height: 50px; /* ou la taille que vous souhaitez */
+  width: auto; /* pour maintenir le ratio d'aspect */
+  /* ajoutez d'autres propriétés CSS si nécessaire */
+}
+
+/* src/App.css */
+.hover-info {
+  position: center;
+  bottom: 10px;
+  left: 10px;
+  background: white;
+  padding: 10px;
+  border: 1px solid black;
+  z-index: 1000;
+}

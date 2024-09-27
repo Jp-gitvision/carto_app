@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7683812f.css",
+    "main.js": "/static/js/main.b67609b9.js",
+    "static/js/453.746105e5.chunk.js": "/static/js/453.746105e5.chunk.js",
+    "static/media/pexels-ella-olsson-1640777.jpg": "/static/media/pexels-ella-olsson-1640777.3c6bb35412cc1068a040.jpg",
+    "static/media/gps.png": "/static/media/gps.416d242f5c66faa1369b.png",
+    "index.html": "/index.html",
+    "main.7683812f.css.map": "/static/css/main.7683812f.css.map",
+    "main.b67609b9.js.map": "/static/js/main.b67609b9.js.map",
+    "453.746105e5.chunk.js.map": "/static/js/453.746105e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7683812f.css",
+    "static/js/main.b67609b9.js"
+  ]
+}

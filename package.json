@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@googlemaps/extended-component-library": "^0.6.11",
+    "bcrypt": "^5.1.1",
+    "csv-parser": "^3.0.0",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.2",
+    "papaparse": "^5.4.1"
+  }
+}

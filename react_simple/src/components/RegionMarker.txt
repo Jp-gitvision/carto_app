@@ -1,0 +1,55 @@
+import React, { useState } from 'react';
+import { Marker, Popup, Tooltip } from 'react-leaflet';
+import { Icon } from 'leaflet';
+
+// Définir l'icône du marqueur
+const customerIcon = new Icon({
+  iconUrl: require('/Users/jujupeneau/Desktop/Wildcodeschool_Data_engineer/projet/Lama_dev_login/my-react-passport-app/src/img/gps.png'),
+  iconSize: [38, 38],
+});
+
+// Composant pour afficher un marqueur de région
+const RegionMarker = ({ region, data, onClick }) => {
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  const handleMouseOver = () => {
+    setShowTooltip(true);
+  };
+
+  const handleMouseOut = () => {
+    setShowTooltip(false);
+  };
+
+  return (
+    <Marker
+      position={[region.latitude, region.longitude]}
+      icon={customerIcon}
+      eventHandlers={{
+        click: onClick,
+        mouseover: handleMouseOver,
+        mouseout: handleMouseOut
+      }}
+    >
+      {showTooltip && (
+        <Tooltip direction="top" offset={[0, -30]} opacity={1}>
+          <div>
+            {region.name} <br />
+            F65-79: {data.femmes_65_79} <br />
+            F80+: {data.femmes_80_plus} <br />
+            H65-79: {data.hommes_65_79} <br />
+            H80+: {data.hommes_80_plus}
+          </div>
+        </Tooltip>
+      )}
+      <Popup>
+        {region.name} <br />
+        F65-79: {data.femmes_65_79} <br />
+        F80+: {data.femmes_80_plus} <br />
+        H65-79: {data.hommes_65_79} <br />
+        H80+: {data.hommes_80_plus}
+      </Popup>
+    </Marker>
+  );
+};
+
+export default RegionMarker;
